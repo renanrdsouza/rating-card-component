@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Hanken Grotesk', sans-serif;
+    src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.154);
+}
+
+.result-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px;
+    gap: 25px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.result-card-title {
+    color: rgba(255, 255, 255, 0.600);
+}
+
+.rating-total {
+    color: rgba(255, 255, 255, 0.600);
+}
+
+.result-card p {
+    text-align: center;
+}
+
+.result-card-description {
+    color: rgba(255, 255, 255, 0.600);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.rating-top {
+    font-size: 70px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.summary-card {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.field-name {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.100);
+    margin-top: 15px;
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.100);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.100);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.100);
+    color: hsl(234, 85%, 45%);
+}
+
+.rate {
+    display: flex;
+    gap: 5px;
+}
+
+.actual-rate {
+    color: hsl(224, 30%, 27%);
+}
+
+.total-rate {
+    color: hsl(240, 26%, 70%);   
+}
+
+.button {
+    color: white;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border: hidden;
+    font-weight: 700;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to bottom, hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 560px) {
+    .main-content {
+        flex-wrap: wrap;
+        min-width: 380px;
+    }
+}
