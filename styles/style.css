@@ -149,14 +149,6 @@
     background-image: linear-gradient(to bottom, hsl(224, 30%, 27%), hsl(224, 30%, 27%));
 }
 
-.footer { 
-    font-size: 11px; text-align: center; 
-}
-
-.footer a { 
-    color: hsl(228, 45%, 44%); 
-}
-
 @media (max-width: 560px) {
     .main-content {
         flex-wrap: wrap;
